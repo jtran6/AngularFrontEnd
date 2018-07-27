@@ -1,0 +1,28 @@
+<div class="main-div">
+  <p-card title="Login" [style]="{width: '500px'}">
+    <div class="center-wrapper">
+      <br>
+      <span class="ui-float-label">
+        <input id="companyCode" type="text" size="30" pInputText>
+        <label for="companyCode">Company Code</label>
+      </span>
+      <br>
+      <span class="ui-float-label">
+        <input id="username" type="text" size="30" pInputText>
+        <label for="username">Username</label>
+      </span>
+      <br>
+      <span class="ui-float-label">
+        <input id="password" type="password" pPassword [feedback]="false" size="30" />
+        <label for="username">Password</label>
+      </span>
+      <br>
+      <button pButton id="loginButton" type="button" (click)="login()" label="Login" class="ui-button-icon-primary"></button>
+      <button pButton id="forgotPasswordButton" type="button" (click)="forgotPassword()" label="Forgot Password" class="ui-button-danger"></button>
+    </div>
+    <!--End center wrapper-->
+    <p-footer>
+      &nbsp;
+    </p-footer>
+  </p-card>
+</div>
