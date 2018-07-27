@@ -11,22 +11,36 @@ import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
 import { CardModule } from 'primeng/card';
 import { PasswordModule } from 'primeng/password';
+import { MenubarModule } from 'primeng/menubar';
+import { MenuModule } from 'primeng/menu';
 // Pages
 import { AppComponent } from './app.component';
 import { LoginComponent } from './shared/login/login.component';
 import { BuyerHomeComponent } from './buyer/buyer-home/buyer-home.component';
+import { ForgotPasswordComponent } from './shared/forgot-password/forgot-password.component';
+import { ForgotPasswordSuccessComponent } from './shared/forgot-password-success/forgot-password-success.component';
+import { MenuBarComponent } from './buyer/layout/menu-bar/menu-bar.component';
+import { FooterComponent } from './buyer/layout/footer/footer.component';
+import { SideMenuComponent } from './buyer/layout/side-menu/side-menu.component';
 
 // Routing
 const appRoutes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
-    { path: 'app-buyer-home', component: BuyerHomeComponent }
+    { path: 'forgot-password', component: ForgotPasswordComponent },
+    { path: 'forgot-password-success', component: ForgotPasswordSuccessComponent },
+    { path: 'buyer-home', component: BuyerHomeComponent }
 ];
 @NgModule({
     declarations: [
         AppComponent,
         LoginComponent,
-        BuyerHomeComponent
+        BuyerHomeComponent,
+        ForgotPasswordComponent,
+        ForgotPasswordSuccessComponent,
+        MenuBarComponent,
+        FooterComponent,
+        SideMenuComponent
     ],
     imports: [
         BrowserModule,
@@ -42,7 +56,9 @@ const appRoutes: Routes = [
         DialogModule,
         ButtonModule,
         CardModule,
-        PasswordModule
+        PasswordModule,
+        MenubarModule,
+        MenuModule
     ],
     providers: [],
     bootstrap: [AppComponent]
