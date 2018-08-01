@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  isDashboardHome: boolean;
+  isDashboardReport: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    this.isDashboardHome = true;
   }
 
 }

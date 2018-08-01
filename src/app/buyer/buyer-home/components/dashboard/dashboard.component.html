@@ -1,3 +1,4 @@
-<p>
-  dashboard works!
-</p>
+<div class="main-div">
+  <app-dashboard-home *ngIf='isDashboardHome'></app-dashboard-home>
+  <app-dashboard-reports *ngIf='isDashboardReport'></app-dashboard-reports>
+</div>

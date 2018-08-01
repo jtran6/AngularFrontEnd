@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Car } from './domain/car';
 
 @Component({
     selector: 'app-root',

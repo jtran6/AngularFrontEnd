@@ -13,7 +13,8 @@ import { CardModule } from 'primeng/card';
 import { PasswordModule } from 'primeng/password';
 import { MenubarModule } from 'primeng/menubar';
 import { MenuModule } from 'primeng/menu';
-// Pages
+import { TabMenuModule } from 'primeng/tabmenu';
+// Buyer Pages
 import { AppComponent } from './app.component';
 import { LoginComponent } from './shared/login/login.component';
 import { BuyerHomeComponent } from './buyer/buyer-home/buyer-home.component';
@@ -21,7 +22,6 @@ import { ForgotPasswordComponent } from './shared/forgot-password/forgot-passwor
 import { ForgotPasswordSuccessComponent } from './shared/forgot-password-success/forgot-password-success.component';
 import { MenuBarComponent } from './buyer/layout/menu-bar/menu-bar.component';
 import { FooterComponent } from './buyer/layout/footer/footer.component';
-import { SideMenuComponent } from './buyer/layout/side-menu/side-menu.component';
 import { DashboardComponent } from './buyer/buyer-home/components/dashboard/dashboard.component';
 import { DashboardHomeComponent } from './buyer/buyer-home/components/dashboard/dashboard-home/dashboard-home.component';
 import { DashboardReportsComponent } from './buyer/buyer-home/components/dashboard/dashboard-reports/dashboard-reports.component';
@@ -85,6 +85,7 @@ import { OrderQuickSearchComponent } from './buyer/buyer-home/components/order/o
 import { OrderAdvancedSearchComponent } from './buyer/buyer-home/components/order/order-advanced-search/order-advanced-search.component';
 import { OrderBrowseComponent } from './buyer/buyer-home/components/order/order-browse/order-browse.component';
 import { OrderVendorDirectComponent } from './buyer/buyer-home/components/order/order-vendor-direct/order-vendor-direct.component';
+import { MenuTabComponent } from './buyer/layout/menu-bar/menu-tab/menu-tab.component';
 
 // Routing
 const appRoutes: Routes = [
@@ -103,7 +104,6 @@ const appRoutes: Routes = [
         ForgotPasswordSuccessComponent,
         MenuBarComponent,
         FooterComponent,
-        SideMenuComponent,
         DashboardComponent,
         DashboardHomeComponent,
         DashboardReportsComponent,
@@ -166,7 +166,8 @@ const appRoutes: Routes = [
         OrderQuickSearchComponent,
         OrderAdvancedSearchComponent,
         OrderBrowseComponent,
-        OrderVendorDirectComponent
+        OrderVendorDirectComponent,
+        MenuTabComponent
     ],
     imports: [
         BrowserModule,
@@ -184,7 +185,8 @@ const appRoutes: Routes = [
         CardModule,
         PasswordModule,
         MenubarModule,
-        MenuModule
+        MenuModule,
+        TabMenuModule
     ],
     providers: [],
     bootstrap: [AppComponent]
