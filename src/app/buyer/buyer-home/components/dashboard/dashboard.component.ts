@@ -14,6 +14,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.isDashboardHome = true;
+    this.isDashboardReport = false;
   }
 
 }
