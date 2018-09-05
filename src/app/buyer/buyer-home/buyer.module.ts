@@ -136,7 +136,7 @@ import { BuyerHomeComponent } from './buyer-home.component';
     OrderComponent,
     DashboardReportsComponent,
     DashboardHomeComponent,
-    DashboardComponent
+    DashboardComponent,
   ]
 })
 export class BuyerModule { }
