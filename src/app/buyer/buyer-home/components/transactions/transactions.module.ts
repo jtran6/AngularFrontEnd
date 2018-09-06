@@ -11,10 +11,12 @@ import { TransactionsInvoicesComponent } from './transactions-invoices/transacti
 import { TransactionsOrderApprovalsComponent } from './transactions-order-approvals/transactions-order-approvals.component';
 import { TransactionsOrderComponent } from './transactions-order/transactions-order.component';
 import { TransactionsComponent } from './transactions.component';
+import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   declarations: [
     TransactionsComponent,

@@ -5,10 +5,12 @@ import { ProfileEmailsComponent } from './profile-emails/profile-emails.componen
 import { ProfileAlternativeShippingComponent } from './profile-alternative-shipping/profile-alternative-shipping.component';
 import { ProfileExtendedUsersComponent } from './profile-extended-users/profile-extended-users.component';
 import { ProfileComponent } from './profile.component';
+import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   declarations: [
     ProfileComponent,

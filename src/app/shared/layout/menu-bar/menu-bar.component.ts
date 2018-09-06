@@ -27,7 +27,7 @@ export class MenuBarComponent implements OnInit {
                 // Make Home component appear
                 this.setTabMenu('dashboard');
               },
-              routerLink: 'dashboard/home'
+              routerLink: 'dashboard'
             },
             {
               label: 'Dashboard Reports', 

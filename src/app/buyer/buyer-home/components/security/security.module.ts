@@ -4,10 +4,12 @@ import { SecurityUsersComponent } from './security-users/security-users.componen
 import { SecurityJobsComponent } from './security-jobs/security-jobs.component';
 import { SecuritySystemComponent } from './security-system/security-system.component';
 import { SecurityComponent } from './security.component';
+import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   declarations: [
     SecurityComponent,

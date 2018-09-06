@@ -4,16 +4,33 @@ import { DashboardReportsComponent } from './dashboard-reports/dashboard-reports
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
 import { DashboardComponent } from './dashboard.component';
 import { CardModule } from 'primeng/card';
+import { SharedModule } from '../../../../shared/shared.module';
+
+const COMPONENTS = [
+  DashboardReportsComponent,
+  DashboardHomeComponent,
+  DashboardComponent
+];
+
+const IMPORTS = [
+  CommonModule,
+  SharedModule
+];
+
+const EXPORTS = [
+  ...IMPORTS,
+  ...COMPONENTS
+];
 
 @NgModule({
   imports: [
-    CommonModule,
-    CardModule,
+    ...IMPORTS
+  ],
+  exports: [
+    ...EXPORTS
   ],
   declarations: [
-    DashboardReportsComponent,
-    DashboardHomeComponent,
-    DashboardComponent
+    ...COMPONENTS
   ]
 })
 export class DashboardModule { }

@@ -14,24 +14,40 @@ import { AdministrationBusinessUnitsComponent } from './administration-business-
 import { AdministrationLocationsComponent } from './administration-locations/administration-locations.component';
 import { AdministrationComponent } from './administration.component';
 
+const COMPONENTS = [
+  AdministrationComponent,
+  AdministrationImportWizardComponent,
+  AdministrationApprovalNotificationsComponent,
+  AdministrationInvoiceRulesComponent,
+  AdministrationOrderRulesComponent,
+  AdministrationNewsMessageComponent,
+  AdministrationApImportComponent,
+  AdministrationGlGroupsComponent,
+  AdministrationGlCodesComponent,
+  AdministrationGlAccountsComponent,
+  AdministrationGlSegmentsComponent,
+  AdministrationBusinessUnitsComponent,
+  AdministrationLocationsComponent
+];
+
+const IMPORTS = [
+  CommonModule
+];
+
+const EXPORTS = [
+  ...IMPORTS,
+  ...COMPONENTS
+];
+
 @NgModule({
   imports: [
-    CommonModule
+    ...IMPORTS
+  ],
+  exports: [
+    ...EXPORTS
   ],
   declarations: [
-    AdministrationComponent,
-    AdministrationImportWizardComponent,
-    AdministrationApprovalNotificationsComponent,
-    AdministrationInvoiceRulesComponent,
-    AdministrationOrderRulesComponent,
-    AdministrationNewsMessageComponent,
-    AdministrationApImportComponent,
-    AdministrationGlGroupsComponent,
-    AdministrationGlCodesComponent,
-    AdministrationGlAccountsComponent,
-    AdministrationGlSegmentsComponent,
-    AdministrationBusinessUnitsComponent,
-    AdministrationLocationsComponent
+    ...COMPONENTS
   ]
 })
 export class AdministrationModule { }

@@ -8,10 +8,12 @@ import { OrderOrderEntryComponent } from './order-order-entry/order-order-entry.
 import { OrderRecurringOrdersComponent } from './order-recurring-orders/order-recurring-orders.component';
 import { OrderShoppingCartsComponent } from './order-shopping-carts/order-shopping-carts.component';
 import { OrderComponent } from './order.component';
+import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   declarations: [
     OrderComponent,

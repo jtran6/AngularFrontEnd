@@ -7,17 +7,33 @@ import { BudgetGroupsComponent } from './budget-groups/budget-groups.component';
 import { BudgetBudgetsComponent } from './budget-budgets/budget-budgets.component';
 import { BudgetComponent } from './budget.component';
 
+const COMPONENTS = [
+  BudgetComponent,
+  BudgetImportsComponent,
+  BudgetPeriodValuesComponent,
+  BudgetPeriodsComponent,
+  BudgetGroupsComponent,
+  BudgetBudgetsComponent
+];
+
+const IMPORTS = [
+  CommonModule
+];
+
+const EXPORTS = [
+  ...IMPORTS,
+  ...COMPONENTS
+];
+
 @NgModule({
   imports: [
-    CommonModule
+    ...IMPORTS
+  ],
+  exports: [
+    ...EXPORTS
   ],
   declarations: [
-    BudgetComponent,
-    BudgetImportsComponent,
-    BudgetPeriodValuesComponent,
-    BudgetPeriodsComponent,
-    BudgetGroupsComponent,
-    BudgetBudgetsComponent
+    ...COMPONENTS
   ]
 })
 export class BudgetModule { }

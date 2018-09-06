@@ -12,41 +12,42 @@ import { ReportsModule } from './components/reports/reports.module';
 import { SecurityModule } from './components/security/security.module';
 import { TransactionsModule } from './components/transactions/transactions.module';
 import { VendorManagementModule } from './components/vendor-management/vendor-management.module';
-// PrimeNG
-import { InputTextModule } from 'primeng/inputtext';
-import { DialogModule } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
-import { PasswordModule } from 'primeng/password';
-import { MenubarModule } from 'primeng/menubar';
-import { MenuModule } from 'primeng/menu';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { MenuBarComponent } from '../layout/menu-bar/menu-bar.component';
+
+import { SharedModule } from '../../shared/shared.module';
+
+const IMPORTS = [
+  CommonModule,
+  SharedModule,
+  BuyerRoutingModule,
+  AdministrationModule,
+  BudgetModule,
+  DashboardModule,
+  OrderModule,
+  ProfileModule,
+  ReportsModule,
+  SecurityModule,
+  TransactionsModule,
+  VendorManagementModule
+];
+
+const COMPONENTS = [
+  BuyerHomeComponent
+];
+
+const EXPORTS = [
+  ...IMPORTS,
+  ...COMPONENTS
+];
 
 @NgModule({
   imports: [
-    CommonModule,
-    BuyerRoutingModule,
-    AdministrationModule,
-    BudgetModule,
-    DashboardModule,
-    OrderModule,
-    ProfileModule,
-    ReportsModule,
-    SecurityModule,
-    TransactionsModule,
-    VendorManagementModule,
-    // PrimeNG
-    InputTextModule,
-    DialogModule,
-    ButtonModule,
-
-    PasswordModule,
-    MenubarModule,
-    MenuModule,
-    TabMenuModule
+    ...IMPORTS
+  ],
+  exports: [
+    ...EXPORTS
   ],
   declarations: [
-    BuyerHomeComponent
+    ...COMPONENTS
   ]
 })
 export class BuyerModule { }

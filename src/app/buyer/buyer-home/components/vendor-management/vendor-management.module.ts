@@ -5,10 +5,12 @@ import { VendorManagementItemPricesComponent } from './vendor-management-item-pr
 import { VendorManagementItemsComponent } from './vendor-management-items/vendor-management-items.component';
 import { VendorManagementVendorsComponent } from './vendor-management-vendors/vendor-management-vendors.component';
 import { VendorManagementComponent } from './vendor-management.component';
+import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   declarations: [
     VendorManagementOrderGuidesComponent,
