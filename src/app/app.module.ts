@@ -52,14 +52,7 @@ const appRoutes: Routes = [
         FormsModule,
         TableModule,
         HttpClientModule,
-        InputTextModule,
-        DialogModule,
-        ButtonModule,
-        CardModule,
-        PasswordModule,
-        MenubarModule,
-        MenuModule,
-        TabMenuModule,
+        
         BuyerModule
     ],
     providers: [],
