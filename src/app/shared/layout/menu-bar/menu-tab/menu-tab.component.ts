@@ -32,211 +32,268 @@ export class MenuTabComponent implements OnInit {
   setTabMenu(tabClicked: string){
     switch(tabClicked)
     {
+      // default to dashboard/home on load
       case '':
       this.items = [
         {
-          label: 'Announcements'
+          label: 'Announcements',
+          routerLink: 'dashboard/home'
         },
         {
-          label: 'Dashboard Reports'
+          label: 'Dashboard Reports',
+          routerLink: 'dashboard/reports'
         }
       ];
       break;
       case 'dashboard':
       this.items = [
         {
-          label: 'Announcements'
+          label: 'Announcements',
+          routerLink: 'dashboard/home'
         },
         {
-          label: 'Dashboard Reports'
+          label: 'Dashboard Reports',
+          routerLink: 'dashboard/reports'
         }
       ];
       break;
       case 'order':
       this.items = [
         {
-          label: 'Shopping Carts'
+          label: 'Shopping Carts',
+          routerLink: 'order/shoppingcarts'
         },
         {
-          label: 'Recurring Orders'
+          label: 'Recurring Orders',
+          routerLink: 'order/recurringorders'
         },
         {
-          label: 'Order Entry'
+          label: 'Order Entry',
+          routerLink: 'order/orderentry'
         },
         {
-          label: 'Quick Search'
+          label: 'Quick Search',
+          routerLink: 'order/quicksearch'
         },
         {
-          label: 'Advanced Search'
+          label: 'Advanced Search',
+          routerLink: 'order/advancedsearch'
         },
         {
-          label: 'Browse'
+          label: 'Browse',
+          routerLink: 'order/browse'
         },
         {
-          label: 'Vendor Direct'
+          label: 'Vendor Direct',
+          routerLink: 'order/vendordirect'
         }
       ];
       break;
       case 'transactions': 
       this.items = [
         {
-          label: 'Orders'
+          label: 'Orders',
+          routerLink: 'transactions/orders'
         },
         {
-          label: 'Order Approvals'
+          label: 'Order Approvals',
+          routerLink: 'transactions/orderapprovals'
         },
         {
-          label: 'Invoices'
+          label: 'Invoices',
+          routerLink: 'transactions/invoices'
         },
         {
-          label: 'Invoice Approvals'
+          label: 'Invoice Approvals',
+          routerLink: 'transactions/invoiceapprovals'
         },
         {
-          label: 'Hold'
+          label: 'Hold',
+          routerLink: 'transactions/hold'
         },
         {
-          label: 'Offline Entries'
+          label: 'Offline Entries',
+          routerLink: 'transactions/offlineentries'
         },
         {
-          label: 'Order Resubmit'
+          label: 'Order Resubmit',
+          routerLink: 'transactions/orderresubmit'
         },
         {
-          label: 'Offline Invoice Entry'
+          label: 'Offline Invoice Entry',
+          routerLink: 'transactions/offlineinvoiceentry'
         },
         {
-          label: 'File Import'
+          label: 'File Import',
+          routerLink: 'transactions/fileimport'
         },
         {
-          label: 'Requisitions'
+          label: 'Requisitions',
+          routerLink: 'transactions/requisitions'
         }
       ];
       break;
       case 'reports':
       this.items = [
         {
-          label: 'Items'
+          label: 'Items',
+          routerLink: 'reports/items'
         },
         {
-          label: 'Purchasing'
+          label: 'Purchasing',
+          routerLink: 'reports/purchasing'
         },
         {
-          label: 'Budgets'
+          label: 'Budgets',
+          routerLink: 'reports/budgets'
         },
         {
-          label: 'Approvals'
+          label: 'Approvals',
+          routerLink: 'reports/approvals'
         },
         {
-          label: 'Transactions'
+          label: 'Transactions',
+          routerLink: 'reports/transactions'
         },
         {
-          label: 'GL Spend'
+          label: 'GL Spend',
+          routerLink: 'reports/glspend'
         },
         {
-          label: 'Admin'
+          label: 'Admin',
+          routerLink: 'reports/admin'
         }
       ];
       break;
       case 'vendorManagement':
       this.items = [
         {
-          label: 'Vendors'
+          label: 'Vendors',
+          routerLink: 'vendormanagement/vendors'
         },
         {
-          label: 'Items'
+          label: 'Items',
+          routerLink: 'vendormanagement/items'
         },
         {
-          label: 'Item Prices'
+          label: 'Item Prices',
+          routerLink: 'vendormanagement/itemprices'
         },
         {
-          label: 'Order Guides'
+          label: 'Order Guides',
+          routerLink: 'vendormanagement/orderguides'
         }
       ];
       break;
       case 'security': 
       this.items = [
         {
-          label: 'Users'
+          label: 'Users',
+          routerLink: 'security/users'
         },
         {
-          label: 'Jobs'
+          label: 'Jobs',
+          routerLink: 'security/jobs'
         },
         {
-          label: 'System'
+          label: 'System',
+          routerLink: 'security/system'
         }
       ];
       break;
       case 'administration': 
       this.items = [
         {
-          label: 'Locations'
+          label: 'Locations',
+          routerLink: 'administration/locations'
         },
         {
-          label: 'Business Units'
+          label: 'Business Units',
+          routerLink: 'administration/businessunits'
         },
         {
-          label: 'GL Segments'
+          label: 'GL Segments',
+          routerLink: 'administration/glsegments'
         },
         {
-          label: 'GL Accounts'
+          label: 'GL Accounts',
+          routerLink: 'administration/glaccounts'
         },
         {
-          label: 'GL Codes'
+          label: 'GL Codes',
+          routerLink: 'administration/glcodes'
         },
         {
-          label: 'GL Groups'
+          label: 'GL Groups',
+          routerLink: 'administration/glgroups'
         },
         {
-          label: 'AP Import'
+          label: 'AP Import',
+          routerLink: 'administration/apimport'
         },
         {
-          label: 'New Message'
+          label: 'News Message',
+          routerLink: 'administration/newsmessage'
         },
         {
-          label: 'Order Rules'
+          label: 'Order Rules',
+          routerLink: 'administration/orderrules'
         },
         {
-          label: 'Invoice Rules'
+          label: 'Invoice Rules',
+          routerLink: 'administration/invoicerules'
         },
         {
-          label: 'Approval Notifications'
+          label: 'Approval Notifications',
+          routerLink: 'administration/approvalnotifications'
         },
         {
-          label: 'Import Wizard'
+          label: 'Import Wizard',
+          routerLink: 'administration/importwizard'
         }
       ];
       break;
       case 'budget':
       this.items = [
         {
-          label: 'Budgets'
+          label: 'Budgets',
+          routerLink: 'budget/budgets'
         },
         {
-          label: 'Budget Groups'
+          label: 'Budget Groups',
+          routerLink: 'budget/budgetgroups'
         },
         {
-          label: 'Budget Periods'
+          label: 'Budget Periods',
+          routerLink: 'budget/budgetperiods'
         },
         {
-          label: 'Budget Period Values'
+          label: 'Budget Period Values',
+          routerLink: 'budget/budgetperiodvalues'
         },
         {
-          label: 'Budget Imports'
+          label: 'Budget Imports',
+          routerLink: 'budget/budgetimports'
         }
       ];
       break;
       case 'profile':
       this.items = [
         {
-          label: 'Change Password'
+          label: 'Change Password',
+          routerLink: 'profile/changepassword'
         },
         {
-          label: 'Emails'
+          label: 'Emails',
+          routerLink: 'profile/emails'
         },
         {
-          label: 'ExtUsers'
+          label: 'Extended Users',
+          routerLink: 'profile/extendedusers'
         },
         {
-          label: 'Alternate Shipping'
+          label: 'Alternate Shipping',
+          routerLink: 'profile/alternateshipping'
         }
       ];
       break;

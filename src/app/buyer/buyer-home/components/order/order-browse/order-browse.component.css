@@ -1,0 +1,9 @@
+#leftBrowse {
+    float: left;
+    width: 24%;
+}
+
+#rightBrowse {
+    float: right;
+    width: 75%;
+}

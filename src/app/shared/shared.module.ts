@@ -12,6 +12,8 @@ import { MenuModule } from 'primeng/menu';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { CardModule } from 'primeng/card';
 import { TableModule } from 'primeng/table';
+import {SlideMenuModule} from 'primeng/slidemenu';
+
 import { MenuTabComponent } from './layout/menu-bar/menu-tab/menu-tab.component';
 
 const IMPORTS = [
@@ -25,7 +27,8 @@ const IMPORTS = [
   MenuModule,
   TabMenuModule,
   CardModule,
-  TableModule
+  TableModule,
+  SlideMenuModule
 ];
 const COMPONENTS = [
   MenuBarComponent,
