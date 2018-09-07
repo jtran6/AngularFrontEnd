@@ -13,6 +13,9 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { CardModule } from 'primeng/card';
 import { TableModule } from 'primeng/table';
 import {SlideMenuModule} from 'primeng/slidemenu';
+import {DropdownModule} from 'primeng/dropdown';
+import {AutoCompleteModule} from 'primeng/autocomplete';
+import {TriStateCheckboxModule} from 'primeng/tristatecheckbox';
 
 import { MenuTabComponent } from './layout/menu-bar/menu-tab/menu-tab.component';
 
@@ -28,7 +31,10 @@ const IMPORTS = [
   TabMenuModule,
   CardModule,
   TableModule,
-  SlideMenuModule
+  SlideMenuModule,
+  DropdownModule,
+  AutoCompleteModule,
+  TriStateCheckboxModule
 ];
 const COMPONENTS = [
   MenuBarComponent,

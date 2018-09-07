@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    this.router.navigate(['/buyer-home']);
+    this.router.navigate(['/buyer-home/dashboard/home']);
   }
 
   forgotPassword(){

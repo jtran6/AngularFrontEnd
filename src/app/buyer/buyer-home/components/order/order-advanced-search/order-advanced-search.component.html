@@ -1,3 +1,64 @@
-<p>
-  order-advanced-search works!
-</p>
+<p-card>
+  <div class="ui-g">
+    <!-- Row 1 -->
+    <div class="ui-g-3 ui-lg-3 ui-md-6 ui-sm-12">
+      <span class="ui-float-label">
+        <p-autoComplete [size]="35"></p-autoComplete>
+        <label for="itemNumber">Item Number: </label>
+      </span>
+      <br>
+      <span class="ui-float-label">
+        <p-autoComplete [size]="35"></p-autoComplete>
+        <label for="multipleItemNumbers">Multiple Item Numbers: </label>
+      </span>
+      <br>
+      <span class="ui-float-label">
+        <input id="float-input" type="text" size="35" pInputText>
+        <label for="keywords">Keywords: </label>
+      </span>
+      <br>
+      <span class="ui-float-label">
+        <p-autoComplete [size]="35"></p-autoComplete>
+        <label for="vendors">Vendors: </label>
+      </span>
+    </div>
+    <div class="ui-g-3 ui-lg-3 ui-md-6 ui-sm-12">
+      <label for="glGroup">GL Group: </label>
+      <p-dropdown></p-dropdown>
+      <br>
+      <label for="businessUnit">Business Unit: </label>
+      <p-dropdown></p-dropdown>
+      <br>
+      <label for="Location">Location: </label>
+      <p-dropdown></p-dropdown>
+    </div>
+    <div class="ui-g-3 ui-lg-3 ui-md-6 ui-sm-12">
+      <label for="priceType">Price Type: </label>
+      <p-dropdown></p-dropdown>
+      <br>
+      <label for="formulary">Formulary: </label>
+      <p-dropdown></p-dropdown>
+      <br>
+      <label for="preferred">Preferred: </label>
+      <p-dropdown></p-dropdown>
+      <br>
+      <label for="rebate">Rebate: </label>
+      <p-dropdown></p-dropdown>
+      <br>
+      <label for="itemMessage">Item Message: </label>
+      <p-dropdown></p-dropdown>
+    </div>
+    <div class="ui-g-3 ui-lg-3 ui-md-6 ui-sm-12">
+      <p-triStateCheckbox label="Prior Purchase Only"></p-triStateCheckbox>
+      <br>
+      <p-dropdown></p-dropdown>
+    </div>
+    <!-- Row 2 -->
+    <div class="ui-g-12 ui-lg-12 ui-md-12 ui-sm-12">
+      <div class="centerButtons">
+        <button pButton id="loginButton" type="button" label="Search" class="ui-button-icon-primary"></button>&nbsp;
+        <button pButton id="loginButton" type="button" label="Reset" class="ui-button-icon-danger"></button>
+      </div>
+    </div>
+  </div>
+</p-card>
