@@ -1,64 +1,90 @@
 <p-card>
   <div class="ui-g">
     <!-- Row 1 -->
-    <div class="ui-g-3 ui-lg-3 ui-md-6 ui-sm-12">
+    <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
       <span class="ui-float-label">
-        <p-autoComplete [size]="35"></p-autoComplete>
+        <p-autoComplete [style]="{'width':'100%'}" [inputStyle]="{'width':'100%'}"></p-autoComplete>
         <label for="itemNumber">Item Number: </label>
       </span>
       <br>
       <span class="ui-float-label">
-        <p-autoComplete [size]="35"></p-autoComplete>
+        <p-autoComplete [style]="{'width':'100%'}" [inputStyle]="{'width':'100%'}"></p-autoComplete>
         <label for="multipleItemNumbers">Multiple Item Numbers: </label>
       </span>
       <br>
       <span class="ui-float-label">
-        <input id="float-input" type="text" size="35" pInputText>
+        <input id="float-input" type="text" style="width:100%;" pInputText>
         <label for="keywords">Keywords: </label>
       </span>
       <br>
       <span class="ui-float-label">
-        <p-autoComplete [size]="35"></p-autoComplete>
+        <p-autoComplete [style]="{'width':'100%'}" [inputStyle]="{'width':'100%'}"></p-autoComplete>
         <label for="vendors">Vendors: </label>
       </span>
     </div>
-    <div class="ui-g-3 ui-lg-3 ui-md-6 ui-sm-12">
-      <label for="glGroup">GL Group: </label>
-      <p-dropdown></p-dropdown>
-      <br>
-      <label for="businessUnit">Business Unit: </label>
-      <p-dropdown></p-dropdown>
-      <br>
-      <label for="Location">Location: </label>
-      <p-dropdown></p-dropdown>
-    </div>
-    <div class="ui-g-3 ui-lg-3 ui-md-6 ui-sm-12">
-      <label for="priceType">Price Type: </label>
-      <p-dropdown></p-dropdown>
-      <br>
-      <label for="formulary">Formulary: </label>
-      <p-dropdown></p-dropdown>
-      <br>
-      <label for="preferred">Preferred: </label>
-      <p-dropdown></p-dropdown>
-      <br>
-      <label for="rebate">Rebate: </label>
-      <p-dropdown></p-dropdown>
-      <br>
-      <label for="itemMessage">Item Message: </label>
-      <p-dropdown></p-dropdown>
-    </div>
-    <div class="ui-g-3 ui-lg-3 ui-md-6 ui-sm-12">
-      <p-triStateCheckbox label="Prior Purchase Only"></p-triStateCheckbox>
-      <br>
-      <p-dropdown></p-dropdown>
-    </div>
-    <!-- Row 2 -->
-    <div class="ui-g-12 ui-lg-12 ui-md-12 ui-sm-12">
-      <div class="centerButtons">
-        <button pButton id="loginButton" type="button" label="Search" class="ui-button-icon-primary"></button>&nbsp;
-        <button pButton id="loginButton" type="button" label="Reset" class="ui-button-icon-danger"></button>
+    <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+      <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+        <label for="glGroup">GL Group: </label>
+      </div>
+      <div class="ui-g-8 ui-lg-8 ui-md-8 ui-sm-12">
+        <p-dropdown autoWidth="false" [style]="{'width':'100%'}"  placeholder="Default GL Group"></p-dropdown>
+      </div>
+      <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+        <label for="businessUnit">Business Unit: </label>
+      </div>
+      <div class="ui-g-8 ui-lg-8 ui-md-8 ui-sm-12">
+        <p-dropdown autoWidth="false" [style]="{'width':'100%'}"  placeholder="Default Business Unit"></p-dropdown>
+      </div>
+      <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+        <label for="Location">Location: </label>
+      </div>
+      <div class="ui-g-8 ui-lg-8 ui-md-8 ui-sm-12">
+        <p-dropdown autoWidth="false" [style]="{'width':'100%'}"  placeholder="Default Location"></p-dropdown>
+      </div>
+      <div class="ui-g-12 ui-lg-12 ui-md-12 ui-sm-12">
+        <p-triStateCheckbox label="Prior Purchase Only"></p-triStateCheckbox>
+        <br><br>
+        <p-dropdown autoWidth="false" [style]="{'width':'100%'}" placeholder="Default Prior Purchase Dropdown"></p-dropdown>
       </div>
     </div>
+    <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+      <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+        <label for="priceType">Price Type: </label>
+      </div>
+      <div class="ui-g-8 ui-lg-8 ui-md-8 ui-sm-12">
+        <p-dropdown autoWidth="false" [style]="{'width':'100%'}"  placeholder="Default Price Type"></p-dropdown>
+      </div>
+      <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+        <label for="formulary">Formulary: </label>
+      </div>
+      <div class="ui-g-8 ui-lg-8 ui-md-8 ui-sm-12">
+        <p-dropdown autoWidth="false" [style]="{'width':'100%'}"  placeholder="Default Formulary"></p-dropdown>
+      </div>
+      <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+        <label for="preferred">Preferred: </label>
+      </div>
+      <div class="ui-g-8 ui-lg-8 ui-md-8 ui-sm-12">
+        <p-dropdown autoWidth="false" [style]="{'width':'100%'}"  placeholder="Default Preferred"></p-dropdown>
+      </div>
+      <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+        <label for="rebate">Rebate: </label>
+      </div>
+      <div class="ui-g-8 ui-lg-8 ui-md-8 ui-sm-12">
+        <p-dropdown autoWidth="false" [style]="{'width':'100%'}"  placeholder="Default Rebate"></p-dropdown>
+      </div>
+      <div class="ui-g-4 ui-lg-4 ui-md-4 ui-sm-12">
+        <label for="itemMessage">Item Message: </label>
+      </div>
+      <div class="ui-g-8 ui-lg-8 ui-md-8 ui-sm-12">
+        <p-dropdown autoWidth="false" [style]="{'width':'100%'}"  placeholder="Default Item Message"></p-dropdown>
+      </div>
+  </div>
+  <!-- Row 2 -->
+  <div class="ui-g-12 ui-lg-12 ui-md-12 ui-sm-12">
+    <div class="centerButtons">
+      <button pButton id="loginButton" type="button" label="Search" class="ui-button-icon-primary"></button>&nbsp;
+      <button pButton id="loginButton" type="button" label="Reset" class="ui-button-icon-danger"></button>
+    </div>
+  </div>
   </div>
 </p-card>
