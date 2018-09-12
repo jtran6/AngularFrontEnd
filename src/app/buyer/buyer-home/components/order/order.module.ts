@@ -7,7 +7,6 @@ import { OrderQuickSearchComponent } from './order-quick-search/order-quick-sear
 import { OrderOrderEntryComponent } from './order-order-entry/order-order-entry.component';
 import { OrderRecurringOrdersComponent } from './order-recurring-orders/order-recurring-orders.component';
 import { OrderShoppingCartsComponent } from './order-shopping-carts/order-shopping-carts.component';
-import { OrderComponent } from './order.component';
 import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { SharedModule } from '../../../../shared/shared.module';
     SharedModule
   ],
   declarations: [
-    OrderComponent,
     OrderVendorDirectComponent,
     OrderBrowseComponent,
     OrderAdvancedSearchComponent,
