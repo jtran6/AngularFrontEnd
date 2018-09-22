@@ -1,9 +1,8 @@
 {
-  "name": "primeng-quickstart-cli",
+  "name": "procure-angular-front-end",
   "version": "1.0.0-SNAPSHOT",
   "license": "MIT",
   "scripts": {
-    "postinstall": "ng build --aot -prod",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
