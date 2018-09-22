@@ -17,7 +17,7 @@
             <p-slideMenu [model]="items"></p-slideMenu>
         </div>
         <div class="ui-g-10 ui-lg-10 ui-md-10 ui-sm-8">
-            <p-table [columns]="cols" [value]="cars" [paginator]="true" [rows]="10">
+            <p-table [columns]="cols" [paginator]="true" [rows]="10">
                 <ng-template pTemplate="header" let-columns>
                     <tr>
                         <th *ngFor="let col of columns">
